@@ -1,0 +1,18 @@
+Question 3 – Removing #include <stdio.h>
+
+If #include <stdio.h> is removed from a program that uses printf(), the error occurs during the linking stage.
+
+Explanation:
+- Without stdio.h, the compiler does not know the function prototype of printf().
+- The program may still compile with a warning, because C assumes printf() returns an int by default.
+- However, during the linking stage, the linker cannot find the actual definition of printf() inside the standard C library.
+
+Expected error message:
+undefined reference to `printf`
+
+Stage that fails:
+Linking stage.
+
+Conclusion:
+Removing #include <stdio.h> causes a linker error because printf() is declared in stdio.h and linked from the C standard library.
+
