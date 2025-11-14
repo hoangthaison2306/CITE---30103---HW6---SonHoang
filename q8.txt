@@ -1,0 +1,13 @@
+Question 8 – Global vs Local Scope
+
+globalVar:
+- Declared outside main()
+- Accessible everywhere
+
+localVar:
+- Declared inside main()
+- Accessible only inside main()
+
+Global = whole program
+Local = only inside the function
+
